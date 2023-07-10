@@ -1,27 +1,24 @@
-/* package codechef; // don't place package name! */
+#include <iostream>
+using namespace std;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-/* Name of the class has to be "Main" only if the class is public. */
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		while(t!=0){
-		    int x=sc.nextInt()*2;
-		    int y=sc.nextInt()*5;
-		    if(x>y)
-		    System.out.println("chocolate");
-		    else if(x==y)
-		    System.out.println("either");
-		    else
-		    System.out.println("candy");
-		  	t--;
-		}
+int main() {
+	// your code goes here
+int T;
+	cin>>T;
+	while(T>0){
+	    int X,Y;
+	    cin>>X>>Y;
+	    if(2*X>5*Y){
+	        cout<<"Chocolate"<<endl;
+	    }
+	    else if(2*X==5*Y){
+	        cout<<"Either"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"Candy"<<endl;
+	    }
+	    --T;
 	}
+	return 0;
 }
