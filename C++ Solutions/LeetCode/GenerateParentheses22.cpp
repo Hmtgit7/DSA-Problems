@@ -28,7 +28,9 @@ using namespace std;
   int main(){
     int n;
     cin>>n;
-    vector
-    cout<<;
+    vector<string>ans=generateParenthesis(n);
+    for (int pair:ans){
+      cout<<pair;
+    }
     return 0;
   }
