@@ -15,7 +15,7 @@ class VolumeControl
 		while(n>0){
 		    int X=read.nextInt();
 		    int Y=read.nextInt();
-		    
+            
 		    if(X>=Y) System.out.println(X-Y);
 		    else if(X<=Y) System.out.println(Y-X);
 		    --n;
